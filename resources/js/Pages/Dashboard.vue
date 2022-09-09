@@ -51,7 +51,7 @@ const transactionBarItems = computed(() => mainStore.history)
         title="Overview"
         main
       >
-        <BaseButton
+        <!-- <BaseButton
           href="https://github.com/balajidharma/laravel-vue-admin-panel"
           target="_blank"
           :icon="mdiGithub"
@@ -59,7 +59,7 @@ const transactionBarItems = computed(() => mainStore.history)
           color="contrast"
           rounded-full
           small
-        />
+        /> -->
       </SectionTitleLineWithButton>
       
       <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 mb-6">
@@ -116,7 +116,7 @@ const transactionBarItems = computed(() => mainStore.history)
         </div>
       </div>
 
-      <SectionBannerStarOnGitHub />
+      <!-- <SectionBannerStarOnGitHub /> -->
 
       <SectionTitleLineWithButton
         :icon="mdiChartPie"

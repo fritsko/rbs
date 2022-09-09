@@ -175,7 +175,7 @@ const logout = () => {
               is-desktop-icon-only
             />
           </NavBarItem>
-          <NavBarItem
+          <!-- <NavBarItem
             href="https://github.com/balajidharma/laravel-vue-admin-panel"
             is-desktop-icon-only
           >
@@ -184,7 +184,7 @@ const logout = () => {
               label="GitHub"
               is-desktop-icon-only
             />
-          </NavBarItem>
+          </NavBarItem> -->
           <NavBarItem
             is-desktop-icon-only
             @click="logout"

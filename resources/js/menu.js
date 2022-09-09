@@ -1,11 +1,10 @@
 import {
-  mdiAccountCircle,
   mdiMonitor,
-  mdiGithub,
+  mdiAccountSettings,
   mdiAccountKey,
   mdiAccountEye,
   mdiAccountGroup,
-  mdiPalette
+  mdiArchivePlus
 } from '@mdi/js'
 
 export default [
@@ -15,24 +14,36 @@ export default [
     label: 'Dashboard'
   },
   {
+    icon: mdiAccountSettings,
+    label: 'Admin',
+    menu:[
+      {
+        route: 'permission.index',
+        icon: mdiAccountKey,
+        label: 'Permissions'
+      },
+      {
+        route: 'role.index',
+        icon: mdiAccountEye,
+        label: 'Roles'
+      },
+      {
+        route: 'user.index',
+        icon: mdiAccountGroup,
+        label: 'Users'
+      },
+    ]
+  },
+  {
     route: 'permission.index',
-    icon: mdiAccountKey,
-    label: 'Permissions'
+    icon: mdiArchivePlus,
+    label: 'Product'
   },
-  {
-    route: 'role.index',
-    icon: mdiAccountEye,
-    label: 'Roles'
-  },
-  {
-    route: 'user.index',
-    icon: mdiAccountGroup,
-    label: 'Users'
-  },
-  {
-    href: 'https://github.com/balajidharma/laravel-vue-admin-panel',
-    label: 'GitHub',
-    icon: mdiGithub,
-    target: '_blank'
-  }
+ 
+  // {
+  //   href: 'https://github.com/balajidharma/laravel-vue-admin-panel',
+  //   label: 'GitHub',
+  //   icon: mdiGithub,
+  //   target: '_blank'
+  // }
 ]
